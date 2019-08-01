@@ -10,7 +10,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/raphael/raphael-vendor.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/davinci/davinci-vendor.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
@@ -43,7 +43,7 @@ PRODUCT_PACKAGES += \
 
 # Camera Motor
 PRODUCT_PACKAGES += \
-    vendor.mokee.camera.motor@1.0-service.xiaomi_raphael
+    vendor.mokee.camera.motor@1.0-service.xiaomi_davinci
 
 # Common init scripts
 PRODUCT_PACKAGES += \
@@ -56,7 +56,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    mokee.biometrics.fingerprint.inscreen@1.0-service.xiaomi_raphael
+    mokee.biometrics.fingerprint.inscreen@1.0-service.xiaomi_davinci
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -79,12 +79,12 @@ PRODUCT_PACKAGES += \
 
 # Input
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/sm8150-tavil-snd-card_Button_Jack.kl:system/usr/keylayout/sm8150-tavil-snd-card_Button_Jack.kl \
+    $(LOCAL_PATH)/keylayout/sm6150-tavil-snd-card_Button_Jack.kl:system/usr/keylayout/sm6150-tavil-snd-card_Button_Jack.kl \
     $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_raphael
+    android.hardware.light@2.0-service.xiaomi_davinci
 
 # Livedisplay
 PRODUCT_PACKAGES += \

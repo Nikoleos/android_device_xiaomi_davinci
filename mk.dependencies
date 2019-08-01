@@ -4,11 +4,11 @@
     "target_path": "packages/resources/devicesettings"
   },
   {
-    "repository": "android_kernel_xiaomi_raphael",
-    "target_path": "kernel/xiaomi/raphael"
+    "repository": "android_kernel_xiaomi_davinci",
+    "target_path": "kernel/xiaomi/davinci"
   },
   {
-    "repository": "android_vendor_xiaomi_raphael",
-    "target_path": "vendor/xiaomi/raphael"
+    "repository": "android_vendor_xiaomi_davinci",
+    "target_path": "vendor/xiaomi/davinci"
   }
 ]
